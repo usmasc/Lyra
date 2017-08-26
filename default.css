@@ -1,0 +1,37 @@
+a:link, a:visited, a:active {
+  color: black;
+}
+
+.quote {
+  margin: 20px;
+  font-size: 25px;
+}
+
+.author {
+  margin: 20px;
+  font-size: 25px;
+  text-align: right;
+}
+
+.box {
+  margin : 100px;
+  
+}
+button, .twitter-share-button {
+  margin: 10px;
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: "blue";
+}
+
+button:hover, a:hover {
+    text-decoration: none;
+    background-color: #efc700;
+    cursor: pointer;
+}
+
