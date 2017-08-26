@@ -20,25 +20,31 @@ a:link, a:visited, a:active {
   height: 228px;
   width: 400px;
   padding: 42px;
+}
+
+
+.box2 {
+  width: 568px;
+  height: 396px;
+  border: 42px solid #CC8866;
+  margin-top: 84px;
+  margin-right: 84px;
+  margin-left: 84px;
   outline-style: solid;
-  outline-color: #CC8866;
+  outline-color: #000000;
   outline-width: 42px;
 }
 
-.box2 {
-  width: 652px;
-  height: 480px;
-  border: 42px solid #000000;
-  margin: 42px;
-}
-
 .box3 {
+		width: 42px;
+		height: 126px;
+		background-color: #CC8866;
+		border-right: 42px solid #000000;
+		border-left: 42px solid #000000;
+		margin: 0px 126px;
 }
 
 
-.sign {
-
-}
 
 button, .twitter-share-button {
   margin: 10px;
@@ -54,7 +60,7 @@ button, .twitter-share-button {
 
 button:hover, a:hover {
     text-decoration: none;
-    background-color: #000000;
+    background-color: #ffffff;
     cursor: pointer;
     color: #010101;
 }
