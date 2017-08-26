@@ -1,3 +1,5 @@
+<style>
+
 a:link, a:visited, a:active {
   color: black;
 }
@@ -35,3 +37,4 @@ button:hover, a:hover {
     cursor: pointer;
 }
 
+</style>
