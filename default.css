@@ -17,22 +17,27 @@ a:link, a:visited, a:active {
 
 .box1 {
   border: 42px solid #CCDD99;
-  height: 400px;
+  height: 228px;
   width: 400px;
   padding: 42px;
 }
 
 .box2 {
+  width: 484px;
+  height: 312px;
   border: 42px solid #CC8866;
 }
 
 .box3 {
+  width: 568px;
+  height: 396px;
   border: 42px solid #00000;
+    margin: 42px;
 }
 
 
 .sign {
-  margin: 42px;
+
 }
 
 button, .twitter-share-button {
