@@ -15,11 +15,21 @@ a:link, a:visited, a:active {
   text-align: right;
 }
 
-.box {
-  height: 282px;
+.box1 {
+  border: 42px solid #CCDD99;
+  height: 400px;
   width: 400px;
   padding: 42px;
 }
+
+.box2 {
+  border: 42px solid #CC8866;
+}
+
+.box3 {
+  border: 42px solid #00000;
+}
+
 
 .sign {
   margin: 42px;
