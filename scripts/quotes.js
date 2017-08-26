@@ -1,12 +1,17 @@
 // variables
 
-var biturl = 'bit.ly/2sc88Rm';
+var biturl = 'usmasc.github.io/Lyra';
 
 var quotes = [{
-  "quote" : "Humans have ...",
+  "quote" : "Since humans have 10 fingers, many human civilizations have a number system based on the number 10.",
   "author": "Lyra",
   "twitterHandle": "#Lyra"
-}
+},
+{
+  "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for maps and time.",
+  "author": "Lyra",
+  "twitterHandle": "#Lyra"
+},
 ]
 
 // functions
