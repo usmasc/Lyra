@@ -16,9 +16,15 @@ a:link, a:visited, a:active {
 }
 
 .box {
-  margin : 100px;
-  
+  height: 282px;
+  width: 400px;
+  padding: 42px;
 }
+
+.sign {
+  margin: 42px;
+}
+
 button, .twitter-share-button {
   margin: 10px;
   background-color: #ffd700;
