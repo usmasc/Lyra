@@ -12,6 +12,11 @@ var quotes = [{
   "author": "Lyra",
   "twitterHandle": "#Lyra"
 },
+{
+  "quote" : "A human foals head is one quarter of its length, but only an eighth when it's grown.",
+  "author": "Lyra",
+  "twitterHandle": "#Lyra"
+},
 ]
 
 // functions
