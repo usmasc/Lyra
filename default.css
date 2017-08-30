@@ -46,7 +46,7 @@ a:link, a:visited, a:active {
 
 
 
-button, .twitter-share-button {
+button, .twitter-share-button, #source {
   margin: 10px;
   background-color: #ffffff;
   border: none;
