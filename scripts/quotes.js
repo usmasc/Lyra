@@ -84,7 +84,7 @@ tweet += quoteTweet;
     source = '<a  class="twitter-share-button" href="' + quote.sourceURL;
     source += '" target="_blank">[Source: ' + quote.source + ']</a>';
   } else {
-     source = 'Source:' + quote.source;
+     source = '<div class="twitter-share-button">Source:' + quote.source + '</div>';
   }
   document.getElementById("source").innerHTML = source;
   
