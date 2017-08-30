@@ -17,12 +17,12 @@ var quotes = [{
   "source": "Rydell. EquestriaBound",
   "sourceURL": ""
 },
-]
+];
 
 // danger zone. Only change code after this line if you know thy JavaScript and you find it necessary.
 
-var author = "Lyra",
-var twitterHandle = "#Lyra"
+var author = "Lyra";
+var twitterHandle = "#Lyra";
 
 // functions
 
@@ -82,10 +82,10 @@ tweet += quoteTweet;
   
   if (quote.sourceURL) {
     source = 'Source: <a href="' + quote.sourceURL + '" target="_blank">[' + quote.source + ']</a>';
-  } else
+  } else {
      source = 'Source:' + quote.source;
   }
-  document.getElementById("source").innerHTML = ;
+  document.getElementById("source").innerHTML = source;
   
 }
 
