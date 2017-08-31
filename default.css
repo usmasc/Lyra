@@ -1,7 +1,7 @@
 <style>
 
 a:link, a:visited, a:active {
-  color: black;
+  color: #999999;
 }
 
 .quote {
@@ -55,7 +55,7 @@ button, .twitter-share-button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  color: #aaaaaa;
+  color: #999999;
 }
 
 button:hover, a:hover {
