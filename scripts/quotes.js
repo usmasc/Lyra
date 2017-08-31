@@ -1,25 +1,31 @@
 // variables
 
-var biturl = 'usmasc.github.io/Lyra';
-
 var quotes = [{
   "quote" : "Since humans have 10 fingers, many human civilizations have a number system based on the number 10.",
   "source": "Scott",
-  "sourceURL": "http://punkbass.github.io" 
+  "sourceURL": "http://punkbass.github.io",
+  "className": "History of Math",
+  "classCode": "MAT481"
 },
 {
   "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for maps and time.",
   "source": "Scott",
-  "sourceURL": "http://punkbass.github.io" 
+  "sourceURL": "http://punkbass.github.io", 
+   "className": "History of Math",
+  "classCode": "MAT481"
 },
 {
-  "quote" : "A human foals head is one quarter of its length, but only an eighth when it's grown.",
+  "quote" : "A human foal's head is one quarter of its length, but only an eighth when it's grown.",
   "source": "Rydell. EquestriaBound",
-  "sourceURL": ""
+  "sourceURL": "",
+    "className": "Human Anatomy",
+  "classCode": "BSC 250",
 },
 ];
 
 // danger zone. Only change code after this line if you know thy JavaScript and you find it necessary.
+
+var biturl = 'bit.ly/ASCLyra';
 
 var author = "Lyra";
 var twitterHandle = "#Lyra";
