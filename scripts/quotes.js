@@ -8,7 +8,7 @@ var quotes = [{
   "classCode": "MAT481"
 },
 {
-  "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for maps and time.",
+  "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for time.",
   "source": "Scott",
   "sourceURL": "http://punkbass.github.io", 
    "className": "History of Math",
