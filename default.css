@@ -46,11 +46,11 @@ a:link, a:visited, a:active {
 
 
 
-button, .twitter-share-button, {
+button, .twitter-share-button {
   margin: 10px;
   background-color: #ffffff;
   border: none;
-  padding: 10px 10px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
