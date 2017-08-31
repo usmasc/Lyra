@@ -47,14 +47,14 @@ a:link, a:visited, a:active {
 
 
 button, .twitter-share-button {
-  margin: 10px;
+  margin: 0px;
   background-color: #ffffff;
   border: none;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 8px;
   color: #999999;
 }
 
