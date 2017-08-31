@@ -1,17 +1,17 @@
 <style>
 
 a:link, a:visited, a:active {
-  color: black;
+  color: #999999;
 }
 
 .quote {
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .author {
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: right;
 }
 
@@ -47,22 +47,22 @@ a:link, a:visited, a:active {
 
 
 button, .twitter-share-button {
-  margin: 10px;
+  margin: 0px;
   background-color: #ffffff;
   border: none;
-  padding: 10px 10px;
+  padding: 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  color: #000000;
+  font-size: 8px;
+  color: #999999;
 }
 
 button:hover, a:hover {
     text-decoration: none;
     background-color: #ffffff;
     cursor: pointer;
-    color: #010101;
+    color: #000000;
 }
 
 </style>
