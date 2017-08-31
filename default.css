@@ -6,12 +6,12 @@ a:link, a:visited, a:active {
 
 .quote {
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .author {
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: right;
 }
 
