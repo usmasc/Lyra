@@ -1,23 +1,34 @@
 // variables
 
-var biturl = 'usmasc.github.io/Lyra';
-
 var quotes = [{
   "quote" : "Since humans have 10 fingers, many human civilizations have a number system based on the number 10.",
-  "author": "Lyra",
-  "twitterHandle": "#Lyra"
+  "source": "Scott",
+  "sourceURL": "http://punkbass.github.io",
+  "className": "History of Math",
+  "classCode": "MAT481"
 },
 {
   "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for maps and time.",
-  "author": "Lyra",
-  "twitterHandle": "#Lyra"
+  "source": "Scott",
+  "sourceURL": "http://punkbass.github.io", 
+   "className": "History of Math",
+  "classCode": "MAT481"
 },
 {
-  "quote" : "A human foals head is one quarter of its length, but only an eighth when it's grown.",
-  "author": "Lyra",
-  "twitterHandle": "#Lyra"
+  "quote" : "A human foal's head is one quarter of its length, but only an eighth when it's grown.",
+  "source": "Rydell. EquestriaBound",
+  "sourceURL": "",
+    "className": "Human Anatomy",
+  "classCode": "BSC 250",
 },
 ];
+
+// danger zone. Only change code after this line if you know thy JavaScript and you find it necessary.
+
+var biturl = 'bit.ly/ASCLyra';
+
+var author = "Lyra";
+var twitterHandle = "#Lyra";
 
 // functions
 
@@ -58,24 +69,30 @@ function twitterTrunc(quote, handle) {
 
 
 function newQuote() {
+  var source = '';
   var quote = randomElementOf(quotes);
   document.getElementById("quote").innerHTML = '"' + quote.quote + '"';
-  document.getElementById("author").innerHTML = "- " + quote.author;
+  document.getElementById("author").innerHTML = "~ " + author;
 
   var tweet = '<a class="twitter-share-button" ';
   tweet += 'href="https://twitter.com/intent/tweet?text=';
   
-  if(quote.twitterHandle) {
-    quoteTweet = twitterTrunc(quote.quote, quote.twitterHandle);
-  } else {
-    handle = '-' + quote.author;
-    quoteTweet = twitterTrunc(quote.quote, handle);
-  }
-  tweet += quoteTweet;
-  tweet += '" data-size="large" target="_blank">Tweet</a>';
+  
+quoteTweet = twitterTrunc(quote.quote, twitterHandle);
+  
+tweet += quoteTweet;
+  tweet += '" data-size="large" target="_blank">[Tweet]</a>';
   
   document.getElementById("twitterButton").innerHTML = tweet;
   //document.getElementById("test").innerHTML = quoteTweet;
+  
+  if (quote.sourceURL) {
+    source = '<a  class="twitter-share-button" href="' + quote.sourceURL;
+    source += '" target="_blank">[Source: ' + quote.source + ']</a>';
+  } else {
+     source = '<div class="twitter-share-button">Source:' + quote.source + '</div>';
+  }
+  document.getElementById("source").innerHTML = source;
   
 }
 
