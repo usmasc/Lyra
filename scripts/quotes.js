@@ -73,38 +73,33 @@ function twitterTrunc(quote, handle) {
   return replaceSpace20(tweet);
 }
 
-function randomQuote() {
+function randQuote() {
     quoteNum = randomIndexOf(quotes);
-    quote = quotes[quoteNum];
-    showQuote(quote);
+    showQuote(quotes[quoteNum]);
 }
 
 function prevQuote() {
     if (quoteNum > 0) {
-    quoteNum -= 1;
-    quote = quotes[quoteNum];
-    showQuote(quote);
+      quoteNum -= 1;
+      showQuote(quotes[quoteNum]);
     }  
 }
 
 function nextQuote() {
     if (quoteNum < quotes.length-1) {
     quoteNum += 1;
-    quote = quotes[quoteNum];
-    showQuote(quote);
+    showQuote(quotes[quoteNum]);
     }  
 }
 
 function firstQuote() {
   quoteNum = 0;
-  quote = quotes[quoteNum];
-  showQuote(quote);
+  showQuote(quotes[quoteNum]);
 }
 
 function lastQuote() {
   quoteNum = quotes.length-1;
-  quote = quotes[quoteNum];
-  showQuote(quote);
+  showQuote(quotes[quoteNum]);
 }
 
 
