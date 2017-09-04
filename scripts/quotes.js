@@ -29,11 +29,17 @@ var biturl = 'bit.ly/ASCLyra';
 
 var author = "Lyra";
 var twitterHandle = "#Lyra";
+var quoteNum = 0;
+var quote = quotes[0];
 
 // functions
 
 function randomElementOf(theArray) {
   return theArray[Math.floor(Math.random() * theArray.length)];
+}
+
+function randomIndexOf(theArray) {
+  return Math.floor(Math.random() * theArray.length);
 }
 
 function replaceSpace20(str) {
@@ -67,10 +73,43 @@ function twitterTrunc(quote, handle) {
   return replaceSpace20(tweet);
 }
 
+function randomQuote() {
+    quoteNum = randomIndexOf(quotes);
+    quote = quotes[quoteNum];
+    showQuote(quote);
+}
 
-function newQuote() {
+function prevQuote() {
+    if (quoteNum > 0) {
+    quoteNum -= 1;
+    quote = quotes[quoteNum];
+    showQuote(quote);
+    }  
+}
+
+function nextQuote() {
+    if (quoteNum < quotes.length-1) {
+    quoteNum += 1;
+    quote = quotes[quoteNum];
+    showQuote(quote);
+    }  
+}
+
+function firstQuote() {
+  quoteNum = 0;
+  quote = quotes[quoteNum];
+  showQuote(quote);
+}
+
+function lastQuote() {
+  quoteNum = quotes.length-1;
+  quote = quotes[quoteNum];
+  showQuote(quote);
+}
+
+
+function showQuote(quote) {
   var source = '';
-  var quote = randomElementOf(quotes);
   document.getElementById("quote").innerHTML = '"' + quote.quote + '"';
   document.getElementById("author").innerHTML = "~ " + author;
 
