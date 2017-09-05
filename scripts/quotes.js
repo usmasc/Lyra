@@ -157,4 +157,5 @@ function clssPick() {
   document.getElementById('quote').innerHTML = buttS;
 }
 
+
 randQuote();
