@@ -47,7 +47,7 @@ function randomElementOf(theArray) {
 
 function replaceSpace20(str) {
   str2 = '';
-  for (i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; i++) {
     if (str[i] === ' ') {
       str2 += '%20';
     } else if (str[i] === '#'){
@@ -135,17 +135,17 @@ function showQuote(quote) {
 
 function clssFilter(clss) {
   function clssCheck(quote) {
-    return quote.classCode = clss;
+    return quote.classCode === clss;
   }
   quotes = facts.filter(clssCheck);
 }
 
 function clssPick() {
-  var clssCodes = facts.map(function(c) {return c.classCode;})
+  var clssCodes = facts.map(function(c) {return c.classCode;});
   var clssCodes2 = [];
   var buttS; // button string
    for(var i = 0; i< clssCodes.length; i++) {
-    if clssCodes2.indexOf(clssCodes[i]) == -1) {
+    if (clssCodes2.indexOf(clssCodes[i]) == -1) {
       clssCodes2.push(clssCodes[i]);
     }
   }
