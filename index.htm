@@ -7,8 +7,13 @@
           <em><div id="quote" class="quote"></div></em>
           <div id="author" class="author"></div>
           <table><tr>
-            	<td width=100><button class="twitter-share-button" onClick="newQuote()">[New Fact]</button></td>
-            	<td width=100><div id="twitterButton"> </div> 
+            	<td width=160><button class="twitter-share-button" onClick="firstQuote()">[|<]</button>
+			<button class="twitter-share-button" onClick="prevQuote()">[<]</button>	
+			<button class="twitter-share-button" onClick="randQuote()">[R]</button>	
+			<button class="twitter-share-button" onClick="nextQuote()">[>]</button>	
+			<button class="twitter-share-button" onClick="lastQuote()">[>|]</button>	
+		</td>
+            	<td width=50><div id="twitterButton"> </div> 
 		<td><div id="source"> </div></td>	    
             <div id="test"></div>
         </td>
@@ -20,6 +25,7 @@
 	<td><div class="box3"></div></td>
 	<td><div class="box3"></div></td>
 </tr><table>
+	v.0.2
 
 <script src="scripts/quotes.js"></script>
 </body>
