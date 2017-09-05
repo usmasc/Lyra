@@ -4,16 +4,17 @@ a:link, a:visited, a:active {
   color: #999999;
 }
 
-.quote {
+#quote {
   margin: 20px;
   font-size: 20px;
   height: 110px;
 }
 
-.author {
+#author {
   margin: 20px;
   font-size: 20px;
   text-align: right;
+	height: 20px;
 }
 
 .box1 {
