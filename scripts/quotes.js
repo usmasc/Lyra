@@ -1,6 +1,6 @@
 // variables
 
-var quotes = [{
+var facts = [{
   "quote" : "Since humans have 10 fingers, many human civilizations have a number system based on the number 10.",
   "source": "Scott",
   "sourceURL": "http://punkbass.github.io",
@@ -25,12 +25,17 @@ var quotes = [{
 
 // danger zone. Only change code after this line if you know thy JavaScript and you find it necessary.
 
+function randomIndexOf(theArray) {
+  return Math.floor(Math.random() * theArray.length);
+}
+
 var biturl = 'bit.ly/ASCLyra';
 
 var author = "Lyra";
 var twitterHandle = "#Lyra";
-var quoteNum = 0;
-var quote = quotes[0];
+var quotes = facts;
+var quoteNum = randomIndexOf(quotes);
+
 
 // functions
 
@@ -38,9 +43,7 @@ function randomElementOf(theArray) {
   return theArray[Math.floor(Math.random() * theArray.length)];
 }
 
-function randomIndexOf(theArray) {
-  return Math.floor(Math.random() * theArray.length);
-}
+
 
 function replaceSpace20(str) {
   str2 = '';
@@ -106,15 +109,15 @@ function lastQuote() {
 function showQuote(quote) {
   var source = '';
   document.getElementById("quote").innerHTML = '"' + quote.quote + '"';
-  document.getElementById("author").innerHTML = "~ " + author;
+  document.getElementById("author").innerHTML = "... " + author;
 
   var tweet = '<a class="twitter-share-button" ';
   tweet += 'href="https://twitter.com/intent/tweet?text=';
   
   
-quoteTweet = twitterTrunc(quote.quote, twitterHandle);
+  quoteTweet = twitterTrunc(quote.quote, twitterHandle);
   
-tweet += quoteTweet;
+  tweet += quoteTweet;
   tweet += '" data-size="large" target="_blank">[Tweet]</a>';
   
   document.getElementById("twitterButton").innerHTML = tweet;
@@ -130,4 +133,28 @@ tweet += quoteTweet;
   
 }
 
-newQuote();
+function clssFilter(clss) {
+  function clssCheck(quote) {
+    return quote.classCode = clss;
+  }
+  quotes = facts.filter(clssCheck);
+}
+
+function clssPick() {
+  var clssCodes = facts.map(function(c) {return c.classCode;})
+  var clssCodes2 = [];
+  var buttS; // button string
+   for(var i = 0; i< clssCodes.length; i++) {
+    if clssCodes2.indexOf(clssCodes[i]) == -1) {
+      clssCodes2.push(clssCodes[i]);
+    }
+  }
+  for (var i = 0; i < clssCodes2.length; i++) {
+    buttS += '<button class="twitter-share-button" onclick="clssFilter("' + clssCodes2[i] + '")>[' + classCodes2[i];
+    buttS += ']</button> '"
+  }
+  
+  document.getElementById('quote').innerHTML = buttS;
+}
+
+randQuote();
