@@ -151,7 +151,7 @@ function clssPick() {
   }
   for (var i = 0; i < clssCodes2.length; i++) {
     buttS += '<button class="twitter-share-button" onclick="clssFilter("' + clssCodes2[i] + '")>[' + classCodes2[i];
-    buttS += ']</button> '"
+    buttS += ']</button> '";
   }
   
   document.getElementById('quote').innerHTML = buttS;
