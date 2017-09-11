@@ -37,7 +37,7 @@ var schools = [
           ["481", "History of Math"]
          ]
       },
-      { "code": 
+      { "code": "BSC",
         "name": "Biological Sciences",
        "classNumbers": [
          ["250", "Human Anatomy"]
@@ -45,7 +45,7 @@ var schools = [
       }
     ]
   }
-  ]
+];
 
 // red zone. Only change code after this line if you know thy JavaScript and you find it necessary.
 
