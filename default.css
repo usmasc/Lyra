@@ -5,6 +5,7 @@ a:link, a:visited, a:active {
 }
 
 #quote {
+	font-style: italic;
   margin: 20px;
   font-size: 20px;
   height: 110px;
