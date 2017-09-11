@@ -3,29 +3,31 @@
 <link rel="stylesheet" type="text/css" href="default.css">
 </head>
 <body>
+	<!-- sign -->
   <div class="box2"><div class="box1">
-          <em><div id="quote" class="quote"></div></em>
-          <div id="author" class="author"></div>
-          <table><tr>
-            	<td width=160><button class="twitter-share-button" onClick="firstQuote()">[|<]</button>
+  	<div id="quote" class="quote"></div>
+    <div id="author" class="author"></div>
+    		
+    <div class="buttonArea">
+			<button class="twitter-share-button" onClick="firstQuote()">[|<]</button>
 			<button class="twitter-share-button" onClick="prevQuote()">[<]</button>	
 			<button class="twitter-share-button" onClick="randQuote()">[R]</button>	
 			<button class="twitter-share-button" onClick="nextQuote()">[>]</button>	
-			<button class="twitter-share-button" onClick="lastQuote()">[>|]</button>	
-		</td>
-            	<td width=50><div id="twitterButton"> </div> 
-		<td><div id="source"> </div></td>	    
-            <div id="test"></div>
-        </td>
-
-      </tr></table>
-     </div></div>
+			<button class="twitter-share-button" onClick="lastQuote()">[>|]</button>
+		        <!--- feature not implemented yet
+                        <button class="twitter-share-button" onClick="classPick()">[C]</button> -->
+		  <span id="twitterButton"> </span>
+		</div>
+		<div class="source" id="source"> </div>	    
+    <div id="test"></div>
+	</div></div>
+		
 <!-- sign posts -->
 <table><tr>
 	<td><div class="box3"></div></td>
 	<td><div class="box3"></div></td>
 </tr><table>
-	v.0.2
+	v.0.13
 
 <script src="scripts/quotes.js"></script>
 </body>

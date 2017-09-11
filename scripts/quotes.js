@@ -1,36 +1,65 @@
-// variables
+// green zone
 
-var quotes = [{
+// Add facts here
+
+var facts = [{
   "quote" : "Since humans have 10 fingers, many human civilizations have a number system based on the number 10.",
-  "source": "Scott",
-  "sourceURL": "http://punkbass.github.io",
-  "className": "History of Math",
-  "classCode": "MAT481"
+  "source": "Numberphile",
+  "sourceURL": "https://www.youtube.com/watch?v=K305Vu7hFg0",
+  "USMclassCodes": ["MAT481"]
 },
 {
   "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for time.",
-  "source": "Scott",
-  "sourceURL": "http://punkbass.github.io", 
-   "className": "History of Math",
-  "classCode": "MAT481"
+  "source": "Numberphile",
+  "sourceURL": "https://www.youtube.com/watch?v=R9m2jck1f90", 
+  "USMclassCodes": ["MAT481"]
 },
 {
   "quote" : "A human foal's head is one quarter of its length, but only an eighth when it's grown.",
   "source": "Rydell. EquestriaBound",
   "sourceURL": "",
-    "className": "Human Anatomy",
-  "classCode": "BSC 250",
+  "USMclassCodes": ["BSC 250"]
 },
 ];
 
-// danger zone. Only change code after this line if you know thy JavaScript and you find it necessary.
+// yellow zone
+
+// Add schools and class codes here
+
+var schools = [
+  {
+    school : "The University of Southern Mississippi",
+    schoolCode : "USM",
+    classCodes: [
+      { "code": "MAT",
+        "name": "Mathematics",
+        "classNumbers": [
+          ["481", "History of Math"]
+         ]
+      },
+      { "code": "BSC",
+        "name": "Biological Sciences",
+       "classNumbers": [
+         ["250", "Human Anatomy"]
+       ]
+      }
+    ]
+  }
+];
+
+// red zone. Only change code after this line if you know thy JavaScript and you find it necessary.
+
+function randomIndexOf(theArray) {
+  return Math.floor(Math.random() * theArray.length);
+}
 
 var biturl = 'bit.ly/ASCLyra';
 
 var author = "Lyra";
 var twitterHandle = "#Lyra";
-var quoteNum = 0;
-var quote = quotes[0];
+var quotes = facts;
+var quoteNum = randomIndexOf(quotes);
+
 
 // functions
 
@@ -38,13 +67,11 @@ function randomElementOf(theArray) {
   return theArray[Math.floor(Math.random() * theArray.length)];
 }
 
-function randomIndexOf(theArray) {
-  return Math.floor(Math.random() * theArray.length);
-}
+
 
 function replaceSpace20(str) {
   str2 = '';
-  for (i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; i++) {
     if (str[i] === ' ') {
       str2 += '%20';
     } else if (str[i] === '#'){
@@ -106,15 +133,15 @@ function lastQuote() {
 function showQuote(quote) {
   var source = '';
   document.getElementById("quote").innerHTML = '"' + quote.quote + '"';
-  document.getElementById("author").innerHTML = "~ " + author;
+  document.getElementById("author").innerHTML = "... " + author;
 
   var tweet = '<a class="twitter-share-button" ';
   tweet += 'href="https://twitter.com/intent/tweet?text=';
   
   
-quoteTweet = twitterTrunc(quote.quote, twitterHandle);
+  quoteTweet = twitterTrunc(quote.quote, twitterHandle);
   
-tweet += quoteTweet;
+  tweet += quoteTweet;
   tweet += '" data-size="large" target="_blank">[Tweet]</a>';
   
   document.getElementById("twitterButton").innerHTML = tweet;
@@ -129,5 +156,32 @@ tweet += quoteTweet;
   document.getElementById("source").innerHTML = source;
   
 }
+
+// not working yet. Abandoned until project takes off
+/*
+function clssFilter(clss) {
+  function clssCheck(quote) {
+    return quote.classCode === clss;
+  }
+  quotes = facts.filter(clssCheck);
+}
+
+function clssPick() {
+  var clssCodes = facts.map(function(c) {return c.classCode;});
+  var clssCodes2 = [];
+  var buttS; // button string
+   for(var i = 0; i< clssCodes.length; i++) {
+    if (clssCodes2.indexOf(clssCodes[i]) == -1) {
+      clssCodes2.push(clssCodes[i]);
+    }
+  }
+  for (var i = 0; i < clssCodes2.length; i++) {
+    buttS += '<button class="twitter-share-button" onclick="clssFilter("' + clssCodes2[i] + '")>[' + classCodes2[i];
+    buttS += ']</button> ';
+  }
+  
+  document.getElementById('quote').innerHTML = buttS;
+}
+*/
 
 randQuote();

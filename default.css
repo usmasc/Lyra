@@ -4,16 +4,18 @@ a:link, a:visited, a:active {
   color: #999999;
 }
 
-.quote {
+#quote {
+	font-style: italic;
   margin: 20px;
   font-size: 20px;
-  height: 110px;
+  height: 90px;
 }
 
-.author {
+#author {
   margin: 20px;
   font-size: 20px;
   text-align: right;
+	height: 20px;
 }
 
 .box1 {
@@ -59,10 +61,16 @@ button, .twitter-share-button {
   color: #999999;
 }
 
-# 
+.buttonArea {
+	height: 18px;
+	text-align: center;
+}
 
 #source {
-	font-size: 12px;
+	height: 16px;
+	font-size: 8px;
+	text-align: right;
+	padding-top: 20px;
 }
 
 button:hover, a:hover {
