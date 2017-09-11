@@ -22,7 +22,7 @@ a:link, a:visited, a:active {
   border: 42px solid #CCDD99;
   height: 228px;
   width: 400px;
-  padding: 42px 42px 22px 42px;
+  padding: 42px;
 }
 
 
@@ -36,6 +36,7 @@ a:link, a:visited, a:active {
   outline-style: solid;
   outline-color: #000000;
   outline-width: 42px;
+  padding: 42px 42px 22px 42px;
 }
 
 .box3 {
