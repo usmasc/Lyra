@@ -8,7 +8,7 @@ a:link, a:visited, a:active {
 	font-style: italic;
   margin: 20px;
   font-size: 20px;
-  height: 110px;
+  height: 90px;
 }
 
 #author {
@@ -36,7 +36,6 @@ a:link, a:visited, a:active {
   outline-style: solid;
   outline-color: #000000;
   outline-width: 42px;
-  padding: 42px 42px 22px 42px;
 }
 
 .box3 {
