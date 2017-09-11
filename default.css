@@ -63,11 +63,13 @@ button, .twitter-share-button {
 
 #buttonArea {
 	height: 18px;
+	text-align: center;
 }
 
 #source {
 	height: 16px;
 	font-size: 8px;
+	text-align: right;
 }
 
 button:hover, a:hover {
