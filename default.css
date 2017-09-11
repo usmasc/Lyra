@@ -39,7 +39,7 @@ a:link, a:visited, a:active {
 
 .box3 {
 		width: 42px;
-		height: 126px;
+		height: 122px;
 		background-color: #CC8866;
 		border-right: 42px solid #000000;
 		border-left: 42px solid #000000;
@@ -60,10 +60,13 @@ button, .twitter-share-button {
   color: #999999;
 }
 
-# 
+#buttonArea {
+	height: 18px;
+}
 
 #source {
-	font-size: 12px;
+	height: 16px;
+	font-size: 8px;
 }
 
 button:hover, a:hover {
