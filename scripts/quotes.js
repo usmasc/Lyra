@@ -1,29 +1,53 @@
-// variables
+// green zone
+
+// Add facts here
 
 var facts = [{
   "quote" : "Since humans have 10 fingers, many human civilizations have a number system based on the number 10.",
-  "source": "Scott",
-  "sourceURL": "http://punkbass.github.io",
-  "className": "History of Math",
-  "classCode": "MAT481"
+  "source": "Numberphile",
+  "sourceURL": "https://www.youtube.com/watch?v=K305Vu7hFg0",
+  "USMclassCodes": ["MAT481"]
 },
 {
   "quote" : "Some human civilizations have developed number systems based on the number 60. This system is still used for time.",
-  "source": "Scott",
-  "sourceURL": "http://punkbass.github.io", 
-   "className": "History of Math",
-  "classCode": "MAT481"
+  "source": "Numberphile",
+  "sourceURL": "https://www.youtube.com/watch?v=R9m2jck1f90", 
+  "USMclassCodes": ["MAT481"]
 },
 {
   "quote" : "A human foal's head is one quarter of its length, but only an eighth when it's grown.",
   "source": "Rydell. EquestriaBound",
   "sourceURL": "",
-    "className": "Human Anatomy",
-  "classCode": "BSC 250",
+  "USMclassCodes": ["BSC 250"]
 },
 ];
 
-// danger zone. Only change code after this line if you know thy JavaScript and you find it necessary.
+// yellow zone
+
+// Add schools and class codes here
+
+var schools = [
+  {
+    school : "The University of Southern Mississippi",
+    schoolCode : "USM",
+    classCodes: [
+      { "code": "MAT",
+        "name": "Mathematics",
+        "classNumbers": [
+          ["481", "History of Math"]
+         ]
+      },
+      { "code": 
+        "name": "Biological Sciences",
+       "classNumbers": [
+         ["250", "Human Anatomy"]
+       ]
+      }
+    ]
+  }
+  ]
+
+// red zone. Only change code after this line if you know thy JavaScript and you find it necessary.
 
 function randomIndexOf(theArray) {
   return Math.floor(Math.random() * theArray.length);
@@ -133,6 +157,8 @@ function showQuote(quote) {
   
 }
 
+// not working yet. Abandoned until project takes off
+/*
 function clssFilter(clss) {
   function clssCheck(quote) {
     return quote.classCode === clss;
@@ -156,6 +182,6 @@ function clssPick() {
   
   document.getElementById('quote').innerHTML = buttS;
 }
-
+*/
 
 randQuote();
